@@ -26,7 +26,7 @@ title                    : "💻Hanjo's Dev Record"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hanjo8813"
-description              : "뭐지이건"
+description              : "💻Hanjo's Dev Record"
 url                      : https://hanjo8813.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -57,7 +57,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : true # true, false (default)
+  hide                   : # true, false (default)
 
 
 
@@ -107,11 +107,24 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: false
       related: true
       sidebar_main: true  #사이드바 카테고리 활성화
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: true
+      sidebar_main: true  #사이드바 카테고리 활성화
+
 
 
 

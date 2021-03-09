@@ -1,10 +1,10 @@
 ---
-title: "테스트카테고리(소1)"
+title: "프로그래머스"
 layout: archive
-permalink: categories/test    # url 이름 설정
+permalink: categories/programmers    # url 이름 설정
 author_profile: true
 ---
 
 
-{% assign posts = site.categories.Test %}
+{% assign posts = site.categories.Programmers %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
