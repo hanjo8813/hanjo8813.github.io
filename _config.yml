@@ -22,11 +22,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dirt", "neon", "
 # ------------------------------------------------  ( 사이트 기본 세팅 ) ---------------------------------------------------------
 # Site Settings
 locale                   : "ko-KR"
-title                    : "💻Hanjo's Dev Record"
+title                    : "💢 머리박기 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hanjo8813"
-description              : "💻Hanjo's Dev Record"
+description              : "💢 머리박기 블로그"
 url                      : https://hanjo8813.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -66,7 +66,7 @@ atom_feed:
 author:
   name             : "한재원"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "내 설명"
+  bio              : "🛠️ 무작정 삽질해서라도 성장하려는 웹 개발자(희망)입니다."
   location         : #"Somewhere"
   email            : #
   links:
@@ -100,6 +100,18 @@ footer:
 
 # ------------------------------------------------  ( Default )  ---------------------------------------------------------
 defaults:
+  # _pages : md포스트한 곳 제외한 페이지
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: true
+      sidebar_main: true  #사이드바 카테고리 활성화
   # _posts
   - scope:
       path: ""
@@ -112,18 +124,7 @@ defaults:
       share: false
       related: true
       sidebar_main: true  #사이드바 카테고리 활성화
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: true
-      sidebar_main: true  #사이드바 카테고리 활성화
+  
 
 
 
