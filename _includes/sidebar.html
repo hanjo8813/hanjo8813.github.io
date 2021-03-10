@@ -19,27 +19,28 @@
   {% if page.sidebar_main %}
   <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
   {% assign sum = site.posts | size %}
-  <nav class="nav__list" style="margin-top:2rem;">
+  <nav class="nav__list" style="margin-top:1.5rem;">
     <input id="ac-toc" name="accordion-toc" type="checkbox" />
     <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
     <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-        📂 <span>전체 글 수 : {{sum}}개</span>
+        📂 <span style="font-size:0.8rem;">전체 글 수 <span style="font-size:1.2rem; color : rgb(203, 164, 230);">{{sum}}</span> 개</span>
       </li>
 
       <!-- 카테고리 영역 시작 -->
       <li>
         <!--여기가 카테고리 대분류 -->
-        <!-- 1. 테스트 카테고리 -->
-        <span class="nav__sub-title">테스트카테고링(대)</span>
+
+        <!-- 1. 프로젝트 카테고리 -->
+        <span class="nav__sub-title">프로젝트</span>
         <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열 여기가 소분류-->
         <ul>
           <!-- 카테고리 글들을 모아둔 페이지인 /categories/(카테고리 대분류) 주소의 글로 링크 연결-->
           <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
           {% for category in site.categories %}
-          {% if category[0] == "Test" %}
-          <li><a href="/categories/test" class="">테스트카테고리(소1) ({{category[1].size}})</a></li>
+          {% if category[0] == "PG" %}
+          <li><a href="/categories/pg" class="nav__sub-title_sub">Please Graduate ({{category[1].size}})</a></li>
           {% endif %}
           {% endfor %}
         </ul>
@@ -49,10 +50,21 @@
         <ul>
           {% for category in site.categories %}
           {% if category[0] == "Programmers" %}
-          <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+          <li><a href="/categories/programmers" class="nav__sub-title_sub">프로그래머스 ({{category[1].size}})</a></li>
           {% endif %}
           {% endfor %}
         </ul>
+
+        <!-- 기타등등 카테고리 
+        <span class="nav__sub-title">기타등등</span>
+        <ul>
+          {% for category in site.categories %}
+          {% if category[0] == "Programmers" %}
+          <li><a href="/categories/programmers" class="nav__sub-title_sub">프로그래머스 ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        -->
       </li>
     </ul>
   </nav>

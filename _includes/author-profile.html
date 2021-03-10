@@ -40,7 +40,7 @@
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+            <li><a target="_blank" href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -53,11 +53,20 @@
         </li>
       {% endif %}
 
+      <!-- 이메일은 항상 노출-->
+      <li>
+        <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i>
+        <span class="label" style="margin-left:-0.2rem">hanjo8813@gmail.com</span>
+      </li>
+      
+
       {% if author.email %}
         <li>
-          <a href="mailto:{{ author.email }}">
+          <a href="">
             <meta itemprop="email" content="{{ author.email }}" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i>
+            <span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}
+            </span>
           </a>
         </li>
       {% endif %}

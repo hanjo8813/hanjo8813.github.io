@@ -31,3 +31,4 @@
 - https://devinlife.com/howto%20github%20pages/github-prepare/
 - https://devinlife.com/howto%20github%20pages/blog-config/
 - https://danggai.github.io/tags/#minimal-mistakes
+- https://devinlife.com/howto%20github%20pages/blog-config/

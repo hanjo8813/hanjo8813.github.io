@@ -22,11 +22,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dirt", "neon", "
 # ------------------------------------------------  ( 사이트 기본 세팅 ) ---------------------------------------------------------
 # Site Settings
 locale                   : "ko-KR"
-title                    : "💢 머리박기 블로그"
+title                    : "머리박기 블로그 💢"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hanjo8813"
-description              : "💢 머리박기 블로그"
+description              : "머리박기 블로그 💢"
 url                      : https://hanjo8813.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -65,14 +65,14 @@ atom_feed:
 # ------------------------------------------------  ( 프로필 ) ---------------------------------------------------------
 author:
   name             : "한재원"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           :  "/assets/img/psa.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "🛠️ 무작정 삽질해서라도 성장하려는 웹 개발자(희망)입니다."
   location         : #"Somewhere"
   email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "hanjo8813@gmail.com"
+      #url: "hanjo8813@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hanjo8813"
@@ -110,8 +110,9 @@ defaults:
       read_time: false
       comments: false
       share: false
-      related: true
+      related: false
       sidebar_main: true  #사이드바 카테고리 활성화
+      
   # _posts
   - scope:
       path: ""
@@ -122,10 +123,15 @@ defaults:
       read_time: false
       comments: # true
       share: false
-      related: true
+      related: false
       sidebar_main: true  #사이드바 카테고리 활성화
-  
-
+      
+# ------------------------------------------------  ( 최근 게시물 ) ---------------------------------------------------------
+# Outputting
+permalink: /:categories/:title/
+paginate: 15 # 몇개까지 보여줄래?
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 
@@ -173,10 +179,6 @@ google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
-
-
-
-
 
 
 # ------------------------------------------------  ( 여기부턴 설정 ) ---------------------------------------------------------
@@ -243,12 +245,6 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

@@ -126,6 +126,7 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
@@ -133,11 +134,22 @@ a {
   &:visited {
     color: $link-color-visited;
   }
-
+  
   &:hover {
     color: $link-color-hover;
     outline: 0;
   }
+}
+
+
+// 걍 내가 커스텀. post 목록 제목들임 
+.my_a{
+  font-size:1.1rem; 
+  color:rgb(105,158,160);
+}
+
+.my_a:hover{
+  color:rgb(197, 225, 226);
 }
 
 /* buttons */

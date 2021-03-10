@@ -489,14 +489,21 @@
 }
 
 .nav__sub-title {
+  color : rgb(214, 180, 238);
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
+  font-size: 1rem;
+
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
+}
+
+.nav__sub-title_sub{
+  font-size: 0.8rem;
 }
 
 /*

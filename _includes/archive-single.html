@@ -10,7 +10,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
+<div class="{{ include.type | default: 'list' }}__item" style="margin-top:-1.6rem;">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     {% if include.type == "grid" and teaser %}
@@ -22,14 +22,18 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       <!-- 포스트 제목-->
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}" style="font-size:1.1rem;">{{ title }}</a> 
+        <a href="{{ post.url | relative_url }}" rel="permalink">
+          <i class="fas fa-link" aria-hidden="true" title="permalink"></i>
+          <span class="sr-only">Permalink</span>
+        </a>
       {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.url | relative_url }}" rel="permalink" class="my_a">{{ title }}</a>
       {% endif %}
 
       <!-- 작성날짜 -->
       {% if post.date %}
-      <span class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: %Y %M %d }}</span>
+      <span class="page__meta" style="margin-left:0.5rem"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>{{ post.date | date: "%Y-%m-%d" }}</span>
       {% endif %}
     </h2>
     
