@@ -1,4 +1,12 @@
 {% if page.previous or page.next %}
+<style>
+  .pagination--pager{
+    color:rgb(15, 123, 108);
+  }
+  .pagination--pager:hover{
+    background-color: rgb(77, 77, 77);
+  }
+</style>
   <nav class="pagination">
     {% if page.previous %}
       <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>

@@ -16,12 +16,12 @@
 
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "dark" "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
 
 
 # ------------------------------------------------  ( 사이트 기본 세팅 ) ---------------------------------------------------------
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "머리박기 블로그 💢"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
