@@ -32,9 +32,15 @@
       <li>
         <!--여기가 카테고리 대분류 -->
 
-        <!-- 교육 카테고리 -->
-        <span class="nav__sub-title">교육</span>
+        <!-- 공부 카테고리 -->
+        <span class="nav__sub-title">개발공부</span>
         <ul>
+          {% for category in site.categories %}
+          {% if category[0] == "TIL" %}
+          <li><a href="/categories/TIL" class="nav__sub-title_sub">TIL ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
         </ul>
 
         <!-- 코딩테스트 카테고리 -->

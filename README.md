@@ -7,7 +7,12 @@
 ## 커스텀 메모
 
 ### 개발용 로컬 서버 실행
-`bundle exec jekyll serve`
+
+```
+> bundle exec jekyll serve
+```
+
+<br>
 
 ### 카테고리 추가하기
 
@@ -17,12 +22,16 @@
 4. 이 md 생성 후 고유 카테고리를 지정해야 한번에 묶어줄 수 있다. (ex `categories: - BOJ`)
 5. 생성했다면 `_includes/sidebar.html` 파일에서 링크를 해당 카테고리와 매핑해준다.
 
+<br>
+
 ### _include 폴더
 > _layout(골격)에서 참조해서 살을 붙이는 파일 모아놓는 폴더 (Liquid 언어로)
 
 - `single.html` : 
 - `archive-single.html` : 카테고리 클릭시, 해당 카테고리 내 게시글들 출력해주는 부분
 - `sidebar.html` : 왼쪽 사이드바 출력 부분
+
+<br>
 
 ### _sass 폴더
 > css 모아놓는 폴더
