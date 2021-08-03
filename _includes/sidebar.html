@@ -41,6 +41,12 @@
           {% endif %}
           {% endfor %}
 
+          {% for category in site.categories %}
+          {% if category[0] == "Java" %}
+          <li><a href="/categories/Java" class="nav__sub-title_sub">Java ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
         </ul>
 
         <!-- 코딩테스트 카테고리 -->
