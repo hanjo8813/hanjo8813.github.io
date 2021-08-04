@@ -14,7 +14,8 @@
 
 # ------------------------------------------------  ( 테마 ) ---------------------------------------------------------
 
-theme                  : "minimal-mistakes-jekyll"
+# warning 메일때문에 없앰
+#theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "dark" "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
 
