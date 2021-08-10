@@ -47,6 +47,12 @@
           {% endif %}
           {% endfor %}
 
+          {% for category in site.categories %}
+          {% if category[0] == "DesignPattern" %}
+          <li><a href="/categories/DesignPattern" class="nav__sub-title_sub">디자인패턴 ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
         </ul>
 
         <!-- 코딩테스트 카테고리 -->
