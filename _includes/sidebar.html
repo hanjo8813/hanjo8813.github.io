@@ -48,6 +48,12 @@
           {% endfor %}
 
           {% for category in site.categories %}
+          {% if category[0] == "Spring" %}
+          <li><a href="/categories/Spring" class="nav__sub-title_sub">Spring ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
+          {% for category in site.categories %}
           {% if category[0] == "DesignPattern" %}
           <li><a href="/categories/DesignPattern" class="nav__sub-title_sub">디자인패턴 ({{category[1].size}})</a></li>
           {% endif %}
