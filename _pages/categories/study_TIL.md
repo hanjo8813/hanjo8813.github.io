@@ -1,5 +1,5 @@
 ---
-title: "Today I Learned"
+title: "Today I Learned 📝"
 layout: archive
 permalink: categories/TIL
 author_profile: true

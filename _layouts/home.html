@@ -4,9 +4,15 @@ layout: archive
 
 {{ content }}
 
+<script>
+  document.getElementById("archive-hr").style.display = "none";
+  document.getElementById("page-title").style.display = "none";
+</script>
+
 <!-- 홈에있는 최근 게시물-->
-<h3 class="archive__subtitle" style="font-size:1.6rem; padding:0.2rem 0 0.2rem 0; ">
-  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
+<h3 class="archive__subtitle" style="font-size:1.6rem; padding:0.6rem 0 0.6rem 0; ">
+  Recent Posts 🚀
+  <!-- {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }} -->
 </h3>
 
 <hr>
