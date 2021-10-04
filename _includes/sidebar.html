@@ -65,6 +65,12 @@
           {% endif %}
           {% endfor %}
 
+          {% for category in site.categories %}
+          {% if category[0] == "DevOps" %}
+          <li><a href="/categories/DevOps" class="nav__sub-title_sub">DevOps ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
           <li>
             <a href="https://github.com/hanjo8813/Dev_Memo" class="nav__sub-title_sub" target="_blank">
               Dev Memo (Repo)
