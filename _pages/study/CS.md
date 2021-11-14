@@ -1,9 +1,9 @@
 ---
-title: "Java로 디자인 패턴 이해하기"
+title: "Computer Science"
 layout: archive
-permalink: categories/DesignPattern
+permalink: categories/CS
 author_profile: true
 ---
 
-{% assign posts = site.categories.DesignPattern %}
+{% assign posts = site.categories.CS %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
