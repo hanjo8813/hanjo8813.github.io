@@ -1,9 +1,9 @@
 ---
-title: "졸업요건 검사 사이트 Please Graduate 개발기록"
+title: "토이 프로젝트를 끝내고 나면 적어보아요"
 layout: archive
-permalink: categories/pg
+permalink: categories/project
 author_profile: true
 ---
 
-{% assign posts = site.categories.PG %}
+{% assign posts = site.categories.project %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
