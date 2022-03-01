@@ -67,8 +67,8 @@ layout: default
             site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
           <span itemprop="keywords">
             {% for category_word in categories_sorted %}
-            <a href=""
-              class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">,
+            <a href="" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span
+              class="sep">,
             </span>{% endunless %}
             {% endfor %}
           </span>
@@ -76,7 +76,7 @@ layout: default
 
         <hr style="margin-top:0.4rem; margin-bottom:2.5rem;">
         {% endif %}
-       
+
         <!-- 안씀
         {% include page__meta.html %}
         -->
@@ -111,6 +111,24 @@ layout: default
        -->
 
       {% if page.share %}{% include social-share.html %}{% endif %}
+
+      <!-- 다라쓰 설치 코드 -->
+      <div id="darass" data-project-key="l6U52XYBLyrkSiq569" data-dark-mode="false" data-primary-color="#28af9d"
+        data-show-sort-option="true" data-allow-social-login="true" data-show-logo="true">
+        <script type="text/javascript" defer>
+          (function () {
+            var $document = document;
+
+            var $script = $document.createElement("script");
+            $script.src = "https://deploy-script.darass.co.kr/embed.js";
+            $script.defer = true;
+
+            $document.head.appendChild($script);
+          })();
+        </script>
+        <noscript>다라쓰 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+      </div>
+      <!-- 다라쓰 설치 코드 끝 -->
 
       <!-- 이전 다음 안써-->
       {% include post_pagination.html %}
@@ -149,4 +167,6 @@ layout: default
     </div>
   </div>
   {% endif %}
+
+
 </div>
