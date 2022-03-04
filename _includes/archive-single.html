@@ -35,13 +35,20 @@
       {% if post.date %}
       <span class="page__meta" style="margin-left:0.5rem"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>{{ post.date | date: "%Y-%m-%d" }}</span>
       {% endif %}
+
+            <!-- 카테고리 -->
+            {% if post.categories[0]  %}
+            {% include post__taxonomy.html type=include.type %}
+          {% endif %}
+
     </h2>
-    
+
+
     <!-- ~분 소요 필요없음 
     {% include page__meta.html type=include.type %}
     -->
     
-    <!-- 부가설명 필요없어-->
+    <!-- 부가설명 -->
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
       
   </article>
