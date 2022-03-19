@@ -157,9 +157,9 @@ social:
 
 # ------------------------------------------------  (분석? 뭔지모름) ---------------------------------------------------------
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"  # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-ZMKF8R0XCB"
     anonymize_ip         : # true, false (default)
 
 # ------------------------------------------------  ( 검색기능 ) ---------------------------------------------------------
