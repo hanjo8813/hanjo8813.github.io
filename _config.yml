@@ -155,7 +155,7 @@ social:
   links: # An array of links to social media profiles
 
 
-# ------------------------------------------------  (분석? 뭔지모름) ---------------------------------------------------------
+# ------------------------------------------------  ( Google Analytics ) ---------------------------------------------------------
 analytics:
   provider               : "google-gtag"  # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
