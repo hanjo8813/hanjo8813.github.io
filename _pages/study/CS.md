@@ -1,5 +1,5 @@
 ---
-title: "Computer Science"
+title: "간략하게 정리한 CS"
 layout: archive
 permalink: categories/CS
 author_profile: true
