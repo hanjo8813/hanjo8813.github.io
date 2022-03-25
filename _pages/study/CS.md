@@ -1,5 +1,5 @@
 ---
-title: "간략하게 정리한 CS"
+title: "CS 지식 압축정리"
 layout: archive
 permalink: categories/CS
 author_profile: true
