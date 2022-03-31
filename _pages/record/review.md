@@ -1,9 +1,9 @@
 ---
-title: "토이 프로젝트를 끝내고 나면 적어보아요"
+title: "💭 그냥 개인적인 회고"
 layout: archive
-permalink: categories/project
+permalink: categories/review
 author_profile: true
 ---
 
-{% assign posts = site.categories.project %}
+{% assign posts = site.categories.review %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
