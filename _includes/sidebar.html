@@ -83,41 +83,36 @@
               Dev Memo (Repo)
             </a>
           </li>
-
         </ul>
 
+        <!-- 기록 카테고리 -->
+        <span class="nav__sub-title">기록</span>
+        <ul>
+          {% for category in site.categories %}
+          {% if category[0] == "Project" %}
+          <li><a href="/categories/Project" class="nav__sub-title_sub">프로젝트 ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+
+          {% for category in site.categories %}
+          {% if category[0] == "Review" %}
+          <li><a href="/categories/Review" class="nav__sub-title_sub">회고 ({{category[1].size}})</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
 
         <!-- 코딩테스트 카테고리 -->
         <span class="nav__sub-title">코딩테스트</span>
         <ul>
           {% for category in site.categories %}
           {% if category[0] == "Programmers" %}
-          <li><a href="/categories/programmers" class="nav__sub-title_sub">프로그래머스 ({{category[1].size}})</a></li>
+          <li><a href="/categories/Programmers" class="nav__sub-title_sub">프로그래머스 ({{category[1].size}})</a></li>
           {% endif %}
           {% endfor %}
 
           {% for category in site.categories %}
           {% if category[0] == "BOJ" %}
           <li><a href="/categories/BOJ" class="nav__sub-title_sub">BOJ ({{category[1].size}})</a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-
-        <!-- 기록 카테고리 -->
-        <span class="nav__sub-title">기록</span>
-        <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열 여기가 소분류-->
-        <ul>
-          <!-- 카테고리 글들을 모아둔 페이지인 /categories/(카테고리 대분류) 주소의 글로 링크 연결-->
-          <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-          {% for category in site.categories %}
-          {% if category[0] == "project" %}
-          <li><a href="/categories/project" class="nav__sub-title_sub">프로젝트 ({{category[1].size}})</a></li>
-          {% endif %}
-          {% endfor %}
-
-          {% for category in site.categories %}
-          {% if category[0] == "review" %}
-          <li><a href="/categories/review" class="nav__sub-title_sub">회고 ({{category[1].size}})</a></li>
           {% endif %}
           {% endfor %}
         </ul>
